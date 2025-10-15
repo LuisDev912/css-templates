@@ -55,7 +55,7 @@ nav {
 main {
     grid-area: main;
     min-width: 300px;
-    max-width: 700px;
+    max-width: 900px;
 }
 
 aside {
@@ -64,3 +64,58 @@ aside {
     top: 0;
     height: 100vh;
 }
+
+/* --- Media queries */
+
+/* Tablet or laptop */
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+        "nav main"
+        "nav main"
+        "aside aside";
+        padding: 0;
+    }
+
+    nav {
+        position: static;
+        height: auto;
+    }
+
+    aside{
+        position: static;
+        height: auto;
+        max-width: 100%;
+    }
+
+    main {
+        max-width: 100%;
+    }
+}
+
+/* mobile */
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-areas:
+        "nav"
+        "main"
+        "aside";
+    }
+
+    nav{
+        max-width: 100%;
+        padding: 5px;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+/* note: media queries can be in another file */
