@@ -7,6 +7,117 @@
     <title>Portfolio using grid</title>
 </head>
 <body>
-    
+    <header class="header">
+        <input type="checkbox" id="open-menu" class="header_checkbox">
+        <label for="open-menu" class="header_open-nav-button" role="button">=</label>
+        <div class="header_logo-container">
+            <img src="image.png" class="header_logo">
+        </div>
+        <nav class="header_nav">
+            <ul class="header_nav-list">
+                <li class="header_nav-item"><a href="#profile">profile</a></li>
+                <li class="header_nav-item"><a href="#portfolio">portfolio</a></li>
+                <li class="header_nav-item"><a href="#form">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="profile" id="profile">
+        <div class="profile_wrapper">
+            <div class="profile_img-container">
+                <img src="image.jpg" alt="profile image">
+            </div>
+            <div class="profile_data-container">
+                <div class="profile_data">
+                    <div class="profile_description">
+                        <h1>Hello, world</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem reiciendis eveniet officiis
+                            accusamus similique distinctio esse quam vero impedit perferendis, quia recusandae quasi aperiam
+                            neque, ducimus aliquam, veritatis fugiat ipsum.
+                        </p>
+                    </div>
+                    <div class="profile_skills">
+                        <h2>SKILLS</h2>
+                        <ul class="profile_skill-container">
+                            <li class="profile_skill">
+                                <div class="load-bar">
+                                    <div class="load-bar_bar bar--100">100%</div>
+                                </div>
+                                <span class="profile_skill-name">skill</span>
+                            </li>
+                            <li class="profile_skill">
+                                <div class="load-bar">
+                                    <div class="load-bar_bar bar--80">80%</div>
+                                </div>
+                                <span class="profile_skill-name">skill</span>
+                            </li>
+                            <li class="profile_skill">
+                                <div class="load-bar">
+                                    <div class="load-bar_bar bar--50">50%</div>
+                                </div>
+                                <span class="profile_skill-name">skill</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="portfolio" id="portfolio">
+        <h2 class="portfolio_title">PORTFOLIO SECTION</h2>
+        <div class="portfolio_project-container">
+            <div class="portfolio_project">
+                <h2 class="portfolio_project-name">PROJECT</h2>
+            </div>
+            <div class="portfolio_project">
+                <h2 class="portfolio_project-name">PROJECT</h2>
+            </div>
+            <div class="portfolio_project">
+                <h2 class="portfolio_project-name">PROJECT</h2>
+            </div>
+            <div class="portfolio_project">
+                <h2 class="portfolio_project-name">PROJECT</h2>
+            </div>
+            <div class="portfolio_project">
+                <h2 class="portfolio_project-name">PROJECT</h2>
+            </div>
+            <div class="portfolio_project">
+                <h2 class="portfolio_project-name">PROJECT</h2>
+            </div>
+        </div>
+    </section>
+    <section class="form" id="form">
+        <h2 class="form_title">CONTACT</h2>
+        <form class="form_form">
+            <div class="form_inputs">
+                <div class="form_input-container">
+                    <label> name
+                        <input type="text" placeholder="Your name" id="name-input">
+                    </label>
+                </div>
+                <div class="form_input-container">
+                    <label> surname
+                        <input type="text" placeholder="Your surname" id="surname-input">
+                    </label>
+                </div>
+                <div class="form_input-container">
+                    <label> mail
+                        <input type="text" placeholder="mail@example.com" id="email-input">
+                    </label>
+                </div>
+                <div class="form_input-container">
+                    <label> message
+                        <textarea placeholder="your message" id="message"></textarea>
+                    </label>
+                </div>
+                <div class="form_input-container">
+                    <input type="submit" value="send">
+                </div>
+            </div>
+        </form>
+    </section>
+    <footer>
+        CSS Layout template
+    </footer>
 </body>
 </html>
