@@ -274,7 +274,7 @@ h1 {
 }
 
 .portfolio_project {
-    background-image: linear-gradient(#0009, #0009), url("image.png");
+    background-image: linear-gradient(#0009, #0009), url("./assets/img/project.jpg");
     /* first gradient, then the image*/
     background-position: center;
     background-size: cover;
