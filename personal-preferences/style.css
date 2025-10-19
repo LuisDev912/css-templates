@@ -19,6 +19,26 @@ body{
     font-family: var(--font-main);
 }
 
-.color-swatch{
-    color: var(--dark-bg)
+.color-swatch {
+    color: var(--text-light);
+    padding: 1rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin: 0.5rem;
+    text-align: center;
+}
+
+.color-swatch:last-child{
+    color: var(--text-dark);
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: var(--dark-bg);
+        color: var(--text-light);
+    }
+
+    .color-swatch {
+        box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+    }
 }
