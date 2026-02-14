@@ -12,6 +12,8 @@
     --space-md: 1rem;
     --space-xl: 2rem;
     --space-xxl: 3rem;
+
+    --radius: 999px;
 }
 
 *,
@@ -25,4 +27,27 @@ body {
     padding: 0;
     min-height: 100vh;
     line-height: 1.6;
+}
+
+/* --- navBar styles --- */
+
+.pill{
+    /* fixed effect */
+    position: fixed;
+    bottom: var(--space-xl);
+    z-index: 100;
+
+    /* flex-box styles */
+    display: flex;
+    justify-content: center;
+    gap: var(--space-md);
+
+    padding: var(--space-xxs) var(--space-sm);
+    background-color: var(--nav-bg);
+    border: 1px solid var(--nav-border);
+    border-radius: var(--radius);
+
+    /* blur effect */
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
 }
