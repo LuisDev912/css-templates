@@ -29,6 +29,11 @@ body {
     line-height: 1.6;
 }
 
+header{
+    display: flex;
+    justify-content: center;
+}
+
 /* --- navBar styles --- */
 
 .pill{
@@ -37,12 +42,6 @@ body {
     bottom: var(--space-xl);
     z-index: 100;
 
-    /* flex-box styles */
-    display: flex;
-    justify-content: center;
-    gap: var(--space-md);
-
-    padding: var(--space-xxs) var(--space-sm);
     background-color: var(--nav-bg);
     border: 1px solid var(--nav-border);
     border-radius: var(--radius);
@@ -50,4 +49,25 @@ body {
     /* blur effect */
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
+}
+
+nav ul{
+    padding: var(--space-xxs) var(--space-sm);
+    /* flex-box styles */
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--space-md);
+    list-style-type: none;
+}
+
+nav a{
+    color: #f5f5f5;
+    transition: color 150ms ease;
+}
+
+nav a:hover{
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 1.4px;
 }
