@@ -84,3 +84,13 @@ nav a:hover{
     text-decoration: underline;
     text-decoration-thickness: 1.4px;
 }
+
+/* --- navBar media queries --- */
+
+@media (min-width: 769px) {
+    .pill {
+        top: 0;
+        bottom: auto;
+        margin-top: var(--space-xxl);
+    }
+}
