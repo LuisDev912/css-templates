@@ -16,6 +16,10 @@
     --radius: 999px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 *,
 *::before,
 *::after {
@@ -33,6 +37,15 @@ body {
 header{
     display: flex;
     justify-content: center;
+}
+
+p{
+    max-width: 62ch;
+}
+
+section{
+    margin: var(--space-xxl) var(--space-xxl);
+    padding: var(--space-md);
 }
 
 /* --- navBar styles --- */
