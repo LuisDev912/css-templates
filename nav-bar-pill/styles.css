@@ -23,6 +23,7 @@
 }
 
 body {
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -55,7 +56,6 @@ nav ul{
     padding: var(--space-xxs) var(--space-sm);
     /* flex-box styles */
     display: flex;
-    justify-content: flex-end;
     gap: var(--space-md);
     list-style-type: none;
 }
@@ -63,11 +63,11 @@ nav ul{
 nav a{
     color: #f5f5f5;
     transition: color 150ms ease;
+    margin: 15px;
 }
 
 nav a:hover{
     color: var(--accent);
-    font-weight: 600;
     text-decoration: underline;
     text-decoration-thickness: 1.4px;
 }
