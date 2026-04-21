@@ -82,10 +82,22 @@
     box-sizing: border-box;
 }
 
-body{
+body {
+    margin: 0;
+    padding: 0;
     background-color: var(--color-bg);
+    background-size: cover;
+    min-height: 100vh;
     color: var(--text-light);
     font-family: var(--font-family-base);
+    font-weight: var(--weight-regular);
+    line-height: 1.6;
+}
+
+@supports (min-height: 100dvh) {
+    body {
+        min-height: 100dvh;
+    }
 }
 
 .color-swatch {
@@ -100,14 +112,14 @@ body{
     color: var(--text-dark);
 }
 
+/* === BUTTONS === */
+
+/* --- base ---*/
 .buttons-container{
     display: flex;
     justify-content: center;
 }
 
-/* === BUTTONS === */
-
-/* --- base ---*/
 button{
     border: none;
     padding: var(--space-md) var(--space-lg);
@@ -141,6 +153,10 @@ button:active{
 
 .button-accent:hover{
     background-color: var(--accent-dark);
+}
+
+.button-accent:active{
+    box-shadow: var(--shadow-strong);
 }
 
 /* === INPUTS === */
