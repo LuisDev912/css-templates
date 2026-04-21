@@ -8,23 +8,33 @@
 </head>
 <body>
     <main>
-        <h1 class="heading-primary">Here you'll find examples of the colours I like</h1>
+        <h1 class="heading-primary text-center">Personal Preferences</h1>
+        <h2 class="heading-secondary text-center">Here you'll find examples of the colours I like</h2>
     
-        <section class="buttons-container">
-            <button class="button-example">button examples</button>
-            <button class="button-accent">accent button</button>
+        <section>
+            <h3 class="heading-tertiary text-center">Button Examples</h3>
+            <div class="buttons-container">
+                <button class="button-example">button examples</button>
+                <button class="button-accent">accent button</button>
+            </div>
         </section>
         
         <section>
+            <h3 class="heading-tertiary text-center">Input Examples</h3>
             <form id="form-example">
+                <label for="input-example" class="sr-only">Input Example</label>
                 <input type="text" placeholder="this is an input example" id="input-example" />
             </form>
         </section>
     
-        <section class="colours">
-            <p class="color-swatch" style="background: var(--primary)">--primary</p>
-            <p class="color-swatch" style="background: var(--accent)">--accent</p>
-            <p class="color-swatch" style="background: var(--neutral)">--neutral</p>
+        <section>
+            <h3 class="heading-tertiary text-center">Colour Examples</h3>
+
+            <div class="colours">
+                <p class="color-swatch" style="background: var(--primary)">--primary</p>
+                <p class="color-swatch" style="background: var(--accent)">--accent</p>
+                <p class="color-swatch" style="background: var(--neutral)">--neutral</p>
+            </div>
         </section>
     </main>
 </body>
