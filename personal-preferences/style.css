@@ -178,7 +178,63 @@ input::placeholder{
     color: var(--text-muted);
 }
 
-/* --- accessibility --- */
+/* === TEXT === */
+
+.heading-primary {
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-xxl);
+    font-weight: var(--weight-bold);
+    text-align: start;
+    letter-spacing: 0.02em;
+}
+
+.heading-secondary {
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-lg);
+    font-weight: var(--weight-semibold);
+    text-align: start;
+}
+
+.heading-tertiary {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-md);
+    font-weight: var(--weight-medium);
+    color: var(--text-secondary);
+    text-align: start;
+}
+
+p {
+    color: var(--text-primary);
+    font-size: var(--font-size-md);
+    margin-bottom: var(--space-sm);
+}
+
+.small-text {
+    font-size: var(--font-size-sm);
+    color: var(--text-muted);
+}
+
+.italic {
+    font-style: italic;
+    color: var(--text-secondary);
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* --- micro typography --- */
+
+.prose {
+    max-width: 60ch;
+    line-height: 1.7;
+}
+
+section>*+* {
+    margin-top: var(--space-sm);
+}
+
+/* --- ACCESSIBILITY --- */
 
 :focus-visible {
     outline: 3px solid var(--color-accent);
