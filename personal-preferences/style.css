@@ -100,11 +100,23 @@ body {
     }
 }
 
+section{
+    padding-block: 4rem;
+}
+
+.colours{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .color-swatch {
     padding: var(--space-md);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow);
     margin: var(--space-sm);
+    min-width: 300px;
+    max-width: 450px;
     text-align: center;
 }
 
@@ -159,8 +171,9 @@ button:active{
     box-shadow: var(--shadow-strong);
 }
 
-/* === INPUTS === */
+/* === FORM ELEMENTS === */
 
+/* --- inputs --- */
 input{
     border: none;
     padding: var(--space-md);
@@ -176,6 +189,16 @@ input:focus{
 
 input::placeholder{
     color: var(--text-muted);
+}
+
+/* --- forms --- */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-lg);
+    padding-block: var(--space-xl);
+    max-width: 100%;
 }
 
 /* === TEXT === */
