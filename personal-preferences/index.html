@@ -7,19 +7,25 @@
     <title>Preferences Example</title>
 </head>
 <body>
-    <h1>Here you'll find examples of the colours I like</h1>
-
-    <div class="buttons-container">
-        <button class="button-example">button examples</button>
-        <button class="button-accent">accent button</button>
-    </div>
+    <main>
+        <h1 class="heading-primary">Here you'll find examples of the colours I like</h1>
     
-    <input type="text" placeholder="this is an input example">
-
-    <div class="color-swatch" style="background: var(--primary)">--primary</div>
-    <div class="color-swatch" style="background: var(--accent)">--accent</div>
-    <div class="color-swatch" style="background: var(--neutral)">--neutral</div>
+        <section class="buttons-container">
+            <button class="button-example">button examples</button>
+            <button class="button-accent">accent button</button>
+        </section>
+        
+        <section>
+            <form id="form-example">
+                <input type="text" placeholder="this is an input example" id="input-example" />
+            </form>
+        </section>
     
-    
+        <section class="colours">
+            <p class="color-swatch" style="background: var(--primary)">--primary</p>
+            <p class="color-swatch" style="background: var(--accent)">--accent</p>
+            <p class="color-swatch" style="background: var(--neutral)">--neutral</p>
+        </section>
+    </main>
 </body>
 </html>
