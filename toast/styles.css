@@ -102,3 +102,13 @@ h1{
     margin: var(--space-lg) 0;
     text-align: center;
 }
+
+/* === TOAST === */
+
+.toast{
+    background-color: var(--button-background);
+    padding: var(--space-md) var(--space-lg);
+    border-radius: var(--radius-md);
+    width: min(300px, 80%);
+    box-shadow: var(--shadow-medium);
+}
