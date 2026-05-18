@@ -105,10 +105,42 @@ h1{
 
 /* === TOAST === */
 
+/* --- container --- */
 .toast{
     background-color: var(--button-background);
     padding: var(--space-md) var(--space-lg);
     border-radius: var(--radius-md);
     width: min(300px, 80%);
     box-shadow: var(--shadow-medium);
+}
+
+/* --- content --- */
+.toast__title{
+    font-size: var(--font-size-lg);
+    font-weight: var(--weight-semibold);
+    color: var(--text-light);
+}
+
+.toast__message{
+    font-size: var(--font-size-md);
+    color: var(--text-light);
+    margin-top: var(--space-xs);
+}
+
+.toast__close{
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: var(--font-size-lg);
+    cursor: pointer;
+    padding: var(--space-xxs);
+    transition: color var(--transition-fast);
+}
+
+.toast__close:hover{
+    color: var(--text-muted);
+}
+
+.toast__close:active{
+    color: var(--text-secondary);
 }
