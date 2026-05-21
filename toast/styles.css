@@ -114,6 +114,12 @@ h1{
     box-shadow: var(--shadow-medium);
 }
 
+.toast__heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* --- content --- */
 .toast__title{
     font-size: var(--font-size-lg);
