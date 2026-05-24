@@ -167,6 +167,17 @@ h1{
     color: var(--text-secondary);
 }
 
+/* --- animation --- */
+
+
+/* --- accessibility --- */
+@media (prefers-reduced-motion: reduce) {
+    .toast,
+    .toast__close {
+        transition: none;
+    }
+}
+
 /* === BUTTON === */
 
 .button {
