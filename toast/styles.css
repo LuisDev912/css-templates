@@ -107,6 +107,11 @@ h1{
 
 /* --- container --- */
 .toast{
+    display: flex;
+    justify-content: center;
+}
+
+.toast-content{
     background-color: var(--button-background);
     padding: var(--space-md) var(--space-lg);
     border-radius: var(--radius-md);
