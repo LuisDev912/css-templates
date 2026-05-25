@@ -156,6 +156,14 @@ h1{
     cursor: pointer;
     padding: var(--space-xxs);
     transition: color var(--transition-fast);
+
+    inline-size: var(--space-xl);
+    block-size: var(--space-xl);
+
+    display: grid;
+    place-items: center;
+
+    border-radius: var(--radius-full);
 }
 
 .toast__close:hover{
