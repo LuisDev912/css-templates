@@ -123,6 +123,7 @@ h1{
     /* animation */
     opacity: 0;
     pointer-events: none;
+    transform: translateY(-20px);
     transition: 
         opacity var(--transition-medium),
         transform var(--transition-medium);
@@ -187,6 +188,12 @@ h1{
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0);
+}
+
+.toast.hide{
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-20px);
 }
 
 /* --- accessibility --- */
