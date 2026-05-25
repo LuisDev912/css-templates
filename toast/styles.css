@@ -119,13 +119,21 @@ h1{
     padding-inline: var(--space-md);
 
     z-index: 9999;
+
+    /* animation */
+    opacity: 0;
+    pointer-events: none;
+    transition: 
+        opacity var(--transition-medium),
+        transform var(--transition-medium);
 }
 
 .toast-content{
     background-color: var(--button-background);
     padding: var(--space-md) var(--space-lg);
     border-radius: var(--radius-md);
-    width: min(350px, 90%);
+    width: 100%;
+    max-width: 400px;
     box-shadow: var(--shadow-medium);
 }
 
@@ -175,7 +183,11 @@ h1{
 }
 
 /* --- animation --- */
-
+.toast.show{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
 
 /* --- accessibility --- */
 @media (prefers-reduced-motion: reduce) {
