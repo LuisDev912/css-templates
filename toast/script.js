@@ -19,7 +19,15 @@ function showToast() {
     toastTimeout = setTimeout(() => {
         $toast.classList.remove('show');
     }, 3000);
-}
+};
+
+/**
+ * Hides the toast notification immediately and clears the timer to prevent it from hiding again after 3 seconds. This function is called when the close button is clicked.
+ */
+function hideToast() {
+    clearTimeout(toastTimeout);
+    $toast.classList.remove('show');
+};
 
 // --- event listeners ---
 
