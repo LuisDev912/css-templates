@@ -5,20 +5,25 @@ const $toastClose = document.querySelector('.toast__close');
 
 let toastTimeout;
 
+const TOAST_DURATION = 3000;
+
 // --- functions ---
 
 /**
- * Shows the toast notification and hides it after 3 seconds. If the toast is already visible, it resets the timer.
- * When the close button is clicked, it immediately hides the toast and clears the timer.
+ * Shows the toast notification.
+ * If the toast is already visible, the timer resets.
+ * Automatically hides the toast after 3 seconds.
  */
-function showToast() { 
+function showToast() {
+    if ($toast.classList.contains('show')) { return; };
+
     clearTimeout(toastTimeout);
 
     $toast.classList.add('show');
 
     toastTimeout = setTimeout(() => {
         $toast.classList.remove('show');
-    }, 3000);
+    }, TOAST_DURATION);
 };
 
 /**
