@@ -190,12 +190,6 @@ h1{
     transform: translateY(0);
 }
 
-.toast.hide{
-    opacity: 0;
-    pointer-events: none;
-    transform: translateY(-20px);
-}
-
 /* --- accessibility --- */
 @media (prefers-reduced-motion: reduce) {
     .toast,
