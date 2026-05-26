@@ -32,12 +32,4 @@ function hideToast() {
 // --- event listeners ---
 
 $button.addEventListener('click', showToast);
-
-$toastClose.addEventListener('click', () => {
-    clearTimeout(toastTimeout);
-    $toast.classList.remove('show');
-});
-
-$toastClose.addEventListener('click', () => {
-    $toast.classList.remove('show');
-});
+$toastClose.addEventListener('click', hideToast);
