@@ -1,11 +1,18 @@
 // --- variables ---
 const $button = document.querySelector('.button');
+const $buttons = document.querySelectorAll('[data-type]');
 const $toast = document.querySelector('.toast');
 const $toastClose = document.querySelector('.toast__close');
 
 let toastTimeout;
 
 const TOAST_DURATION = 3000;
+
+const TOAST_TYPES = [
+    'toast--example',
+    'toast--success',
+    'toast--error'
+];
 
 // --- functions ---
 
@@ -19,7 +26,10 @@ function showToast() {
 
     clearTimeout(toastTimeout);
 
+    $toast.classList.remove(...TOAST_TYPES);
+
     $toast.classList.add('show');
+    $toast.classList.add(`toast--${this.dataset.type}`);
 
     toastTimeout = setTimeout(() => {
         $toast.classList.remove('show');
@@ -38,3 +48,7 @@ function hideToast() {
 
 $button.addEventListener('click', showToast);
 $toastClose.addEventListener('click', hideToast);
+
+$buttons.forEach(button => {
+    button.addEventListener('click', showToast);
+});

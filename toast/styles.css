@@ -190,6 +190,10 @@ h1{
 }
 
 /* --- different types of toasts --- */
+.toast--example .toast-content{
+    background-color: var(--color-card-bg);
+}
+
 .toast--success .toast-content{
     background-color: var(--accent);
 }
