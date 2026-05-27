@@ -219,6 +219,8 @@ h1{
     border-radius: var(--radius-md);
     cursor: pointer;
     transition: background-color var(--transition-fast);
+    width: 100%;
+    max-width: 200px;
 }
 
 .button:hover {
@@ -227,4 +229,14 @@ h1{
 
 .button:active {
     background-color: var(--button-active);
+}
+
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: var(--space-md);
+    margin-top: var(--space-lg);
 }
