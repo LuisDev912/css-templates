@@ -130,7 +130,6 @@ h1{
 }
 
 .toast-content{
-    background-color: var(--button-background);
     padding: var(--space-md) var(--space-lg);
     border-radius: var(--radius-md);
     width: 100%;
@@ -188,6 +187,15 @@ h1{
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0);
+}
+
+/* --- different types of toasts --- */
+.toast--success .toast-content{
+    background-color: var(--accent);
+}
+
+.toast--error .toast-content{
+    background-color: #dc2626;
 }
 
 /* --- accessibility --- */
