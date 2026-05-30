@@ -53,6 +53,7 @@
 
     /* ----- Typography ----- */
     --font-family-base: "Inter", sans-serif;
+    --font-family-title: "Merriweather", serif;
 
     --font-size-xs: 0.75rem;
     --font-size-sm: 0.875rem;
@@ -98,6 +99,7 @@ body {
 }
 
 h1{
+    font-family: var(--font-family-title);
     font-size: var(--font-size-xxl);
     margin: var(--space-lg) 0;
     text-align: center;
