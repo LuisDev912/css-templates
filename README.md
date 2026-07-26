@@ -5,7 +5,7 @@ As the CSS files are examples, sometimes the colours won't be displayed except f
 
 ---
 
-## Tecnologies
+## Technologies
 
 - HTML5
 - CSS3
