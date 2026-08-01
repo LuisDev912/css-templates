@@ -142,3 +142,21 @@ header {
     color: var(--color-accent);
     font-weight: var(--weight-semibold);
 }
+
+/* === MAIN === */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: var(--space-lg);
+}
+
+.skeleton{
+    display: grid;
+}
+
+.skeleton > div{
+    background-color: var(--color-card-bg);
+    /* note: add a colour to test the display of the boxes */
+}
