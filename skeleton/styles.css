@@ -101,9 +101,13 @@ body {
 }
 
 /* === HEADER === */
-header{
+header {
     min-width: 100vw;
     background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .title{
