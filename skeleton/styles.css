@@ -138,4 +138,4 @@ header {
     text-decoration-thickness: 1.4px;
 }
 
-.active{ color: var(--color-accent); }
+.nav .nav-link.active{ color: var(--color-accent); }
