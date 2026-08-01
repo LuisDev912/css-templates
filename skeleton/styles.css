@@ -115,19 +115,20 @@ header{
 }
 
 /* --- nav bar --- */
-.nav > .nav-list{
+.nav .nav-list{
     display: flex;
+    justify-content: center;
     list-style-type: none;
     gap: var(--space-xs);
 }
 
-.nav > .nav-link{
+.nav .nav-link{
     color: var(--neutral);
     transition: color 150ms ease;
     margin: 15px;
 }
 
-.nav > .nav-link:hover{
+.nav .nav-link:hover{
     color: var(--text-muted);
     text-decoration: underline;
     text-decoration-thickness: 1.4px;
