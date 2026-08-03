@@ -146,24 +146,66 @@ header {
 /* === MAIN === */
 main {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    justify-content: center;
     padding: var(--space-lg);
 }
 
-.skeleton{
+.skeleton {
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     gap: var(--space-md);
-    width: 100%;
-    max-width: 800px;
-    background-color: var(--button-background);
 }
 
-.skeleton  div{
-    width: 100%;
-    height: 100%;
-    background-color: var(--accent);
-    /* note: add a colour to test the display of the boxes */
+.skeleton > div{
+    background-color: var(--background);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-soft);
+    padding: var(--space-md);
+}
+
+.div1 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+}
+
+.div2 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+
+.div3 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 4;
+}
+
+.div4 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.div5 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+.div6 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.div7 {
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+
+.div8 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 3;
 }
