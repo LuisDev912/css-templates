@@ -148,13 +148,15 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: var(--space-lg);
 }
 
 .skeleton {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     gap: var(--space-md);
 }
 
