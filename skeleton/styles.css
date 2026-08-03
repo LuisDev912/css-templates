@@ -92,6 +92,8 @@ body {
     font-family: var(--font-family-base);
     font-weight: var(--weight-regular);
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
 }
 
 @supports (min-height: 100dvh) {
@@ -145,12 +147,8 @@ header {
 
 /* === MAIN === */
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
     padding: var(--space-lg);
+    flex: 1;
 }
 
 .skeleton {
@@ -210,4 +208,11 @@ main {
     grid-row: span 3 / span 3;
     grid-column-start: 3;
     grid-row-start: 3;
+}
+
+/* === FOOTER === */
+footer{
+    background-color: var(--primary);
+    text-align: center;
+    padding: var(--space-md);
 }
