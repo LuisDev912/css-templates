@@ -227,6 +227,16 @@ main {
     grid-row-start: 11;
 }
 
+/* --- animations --- */
+@keyframes loader {
+    0% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: -100% 0;
+    }
+}
+
 /* --- media queries --- */
 @media screen and (min-width: 768px) {
     .skeleton {
