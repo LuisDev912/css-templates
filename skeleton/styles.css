@@ -180,7 +180,7 @@ main {
 }
 
 .div3 {
-    grid-row: span 2 / span 2;
+    grid-row: span 2 / span 1;
     grid-column-start: 1;
     grid-row-start: 4;
 }
