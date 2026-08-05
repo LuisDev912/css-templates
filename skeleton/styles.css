@@ -163,10 +163,23 @@ main {
 }
 
 .skeleton > div{
-    background-color: var(--background);
+    background-color: var(--color-card-bg);
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-soft);
     padding: var(--space-md);
+
+    /* animation section */
+    background-image: linear-gradient(
+    90deg,
+        var(--color-card-bg) 0%,
+        var(--color-card-bg) 40%,
+        var(--background) 50%,
+        var(--color-card-bg) 60%,
+        var(--color-card-bg) 100%
+    );
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    animation: loader 1.5s infinite;
 }
 
 .div1 {
