@@ -249,6 +249,12 @@ main {
     }
 }
 
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 /* --- media queries --- */
 @media screen and (min-width: 768px) {
     .skeleton {
