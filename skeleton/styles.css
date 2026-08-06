@@ -162,6 +162,7 @@ main {
     gap: var(--space-md);
 }
 
+/* === SKELETON === */
 .skeleton > div{
     background-color: var(--color-card-bg);
     border-radius: var(--radius-md);
@@ -227,6 +228,17 @@ main {
     grid-row: span 3 / span 3;
     grid-column-start: 1;
     grid-row-start: 11;
+}
+
+/* --- loading circle --- */
+.loading-circle {
+    width: 50px;
+    height: 50px;
+    border: 5px solid var(--color-bg);
+    border-top: 5px solid var(--accent);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: var(--space-lg) auto;
 }
 
 /* --- animations --- */
