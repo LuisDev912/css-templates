@@ -104,7 +104,7 @@ body {
 
 /* === HEADER === */
 header {
-    min-width: 100vw;
+    min-width: 100%;
     background-color: var(--primary);
     display: flex;
     justify-content: center;
