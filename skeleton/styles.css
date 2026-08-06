@@ -168,6 +168,10 @@ main {
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-soft);
     padding: var(--space-md);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     /* animation section */
     background-image: linear-gradient(-50deg, /* you can add any value for the degree */
